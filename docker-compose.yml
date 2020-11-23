@@ -1,0 +1,10 @@
+version: '3'
+services:
+
+ data-science:
+  build: ./
+  image: data-science:latest
+  volumes:
+   - "./output:/output:rw"
+   - "./input:/input:ro"
+
