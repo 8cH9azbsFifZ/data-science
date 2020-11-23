@@ -27,3 +27,4 @@ ENV PYTHON_PACKAGES="\
     nltk \
 " 
 RUN pip3 install --no-cache-dir $PYTHON_PACKAGES
+RUN pip3 install --no-cache-dir seaborn
