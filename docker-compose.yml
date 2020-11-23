@@ -3,7 +3,7 @@ services:
 
  data-science:
   build: ./
-  image: data-science:latest
+  image: asdlfkj31h/data-science:latest
   volumes:
    - "./output:/output:rw"
    - "./input:/input:ro"
