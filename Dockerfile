@@ -28,3 +28,4 @@ ENV PYTHON_PACKAGES="\
 " 
 RUN pip3 install --no-cache-dir $PYTHON_PACKAGES
 RUN pip3 install --no-cache-dir seaborn
+RUN pip3 install --no-cache-dir statsmodels
