@@ -1,4 +1,4 @@
-VER=0.2
+VER=0.3
 
 build:
 	docker build . -t t20:5000/data-science:latest -t t20:5000/data-science:${VER}
