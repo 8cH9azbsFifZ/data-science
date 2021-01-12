@@ -9,9 +9,9 @@ RUN apt-get -y install build-essential
 RUN apt-get -y install python3-pip
 
 # ST tool
-#WORKDIR /app
-#RUN git clone https://github.com/nferraz/st.git
-#RUN cd st; perl Makefile.PL; make ; make install
+WORKDIR /app
+RUN git clone https://github.com/nferraz/st.git
+RUN cd st; perl Makefile.PL; make ; make install
 
 
 RUN mkdir /output /input /workdir
@@ -25,6 +25,7 @@ ENV PYTHON_PACKAGES="\
     scikit-learn \
     pandas \
     nltk \
+    pymongo \
 " 
 RUN pip3 install --no-cache-dir $PYTHON_PACKAGES
 RUN pip3 install --no-cache-dir seaborn
